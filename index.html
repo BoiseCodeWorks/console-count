@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h1>Marks Awesome Team of Kick Butt "Heros"</h1>
+      </div>
+    </div>
+    <div id="my-team" class="row">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <form onsubmit="app.controllers.marvelCtrl.search(event)">
+        <input type="text" placeholder="Name Search" name="name">
+        <input type="color" placeholder="Position Search" name="position">
+        <button type="submit">Search Now</button>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Marvel Team</h1>
+      </div>
+    </div>
+    <div id="marvel-characters" class="row">
+    </div>
+  </div>
+
+
+  <!-- EXTERNAL LIBRARIES -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- SERVICES -->
+  <script src="marvel-service.js"></script>
+  <!-- CONTROLLERS -->
+  <script src="marvel-controller.js"></script>
+  <!-- APP -->
+  <script src="app.js"></script>
+</body>
+
+</html>
